@@ -1,0 +1,111 @@
+.tile > img {
+  border-radius: 10px;
+  height: 300px;
+}
+html {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Farro";
+  font-weight: 100;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(228, 228, 228);
+}
+
+header {
+  margin: 0px;
+  padding: 1px 1px 1px 1px;
+  background-color: rgb(205, 0, 0);
+  color: white ;
+}
+h1 {
+  padding-left: 10px;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  background-color: rgba(255, 255, 255, 0.76);
+  backdrop-filter: saturate(150%) blur(12px);
+  padding: 15px 0px 15px 0px;
+  margin-bottom: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav a:hover{
+  text-decoration: overline;
+  text-decoration-thickness: 2px;
+  color: black;
+
+}
+nav ul {
+  list-style-type: none;
+  text-align: right;
+  margin: 0px;
+}
+nav li {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: right;
+}
+
+
+input {
+  width: 90%;
+  height: 50px;
+  font-size: 23px;
+  margin-bottom: 50px;
+}
+
+
+.dotson-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-areas: 
+  "first second third forth";
+}
+
+.dotson-container div {
+  text-align: center;
+}
+
+.dotson-container div > img{
+  border-radius: 15px;
+}
+
+
+@media only screen and (max-width: 940px) {
+  .dotson-container {
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "first second"
+    "third forth";
+  }
+  h1 {
+    text-align: center;
+    font-size: 23px;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+    .dotson-container {
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "first"
+    "second"
+    "third"
+    "forth";
+  }
+  h1 {
+    text-align: center;
+    font-size: 23px;
+  }
+  img {
+    width: 500px;
+  }
+}
